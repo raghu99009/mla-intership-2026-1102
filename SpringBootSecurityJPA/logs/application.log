@@ -1,0 +1,810 @@
+2026-03-03T15:13:19.904+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 13720 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T15:13:19.914+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T15:13:19.998+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-03T15:13:19.999+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-03T15:13:21.786+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T15:13:21.874+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 4 JPA repository interfaces.
+2026-03-03T15:13:22.863+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T15:13:22.874+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T15:13:22.928+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2929 ms
+2026-03-03T15:13:23.144+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T15:13:23.157+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@182dbc98{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.15449175702049067773/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@4fc50e93{STARTED}}
+2026-03-03T15:13:23.158+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@182dbc98{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.15449175702049067773/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@4fc50e93{STARTED}}
+2026-03-03T15:13:23.159+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@3062ed93{STARTING}[12.1.6,sto=0] @286ms
+2026-03-03T15:13:23.333+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T15:13:23.423+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T15:13:24.118+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T15:13:24.165+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T15:13:24.405+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76248936
+2026-03-03T15:13:24.407+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T15:13:24.482+05:30  WARN 13720 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T15:13:24.507+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T15:13:26.105+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T15:13:26.118+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T15:13:26.286+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T15:13:26.324+05:30  WARN 13720 --- [SpringBootSecurityJPA] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.test.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: interface org.apache.catalina.User
+2026-03-03T15:13:26.324+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T15:13:26.331+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T15:13:26.341+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T15:13:26.344+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Stopped oejs.Server@3062ed93{STOPPING}[12.1.6,sto=0]
+2026-03-03T15:13:26.354+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@182dbc98{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.15449175702049067773/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@4fc50e93{STOPPED}}
+2026-03-03T15:13:26.367+05:30  INFO 13720 --- [SpringBootSecurityJPA] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-03T15:13:26.394+05:30 ERROR 13720 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.test.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: interface org.apache.catalina.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.test.SpringBootSecurityJpaApplication.main(SpringBootSecurityJpaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.test.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: interface org.apache.catalina.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.test.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: interface org.apache.catalina.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 39 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: interface org.apache.catalina.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:254) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:394) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:85) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:92) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:73) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:270) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getRepositoryFragments(JpaRepositoryFactory.java:300) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getRepositoryFragments(JpaRepositoryFactory.java:280) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getRepositoryStub$0(RepositoryFactorySupport.java:497) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepositoryStub(RepositoryFactorySupport.java:494) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:334) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$1(RepositoryFactoryBeanSupport.java:361) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:136) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:370) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:212) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 49 common frames omitted
+
+2026-03-03T15:15:31.379+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 16964 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T15:15:31.383+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T15:15:31.446+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-03T15:15:31.446+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-03T15:15:32.807+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T15:15:32.890+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2026-03-03T15:15:33.682+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T15:15:33.687+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T15:15:33.723+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2276 ms
+2026-03-03T15:15:33.886+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T15:15:33.955+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@28d30a4d{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.11028857707810122707/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@19324e17{STARTED}}
+2026-03-03T15:15:33.956+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@28d30a4d{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.11028857707810122707/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@19324e17{STARTED}}
+2026-03-03T15:15:33.957+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@62ee7eae{STARTING}[12.1.6,sto=0] @271ms
+2026-03-03T15:15:34.090+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T15:15:34.147+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T15:15:34.741+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T15:15:34.778+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T15:15:34.997+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a836163
+2026-03-03T15:15:34.999+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T15:15:35.175+05:30  WARN 16964 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T15:15:35.246+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T15:15:36.159+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T15:15:36.170+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T15:15:36.252+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T15:15:37.323+05:30  WARN 16964 --- [SpringBootSecurityJPA] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-03-03T15:15:37.324+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T15:15:37.328+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T15:15:37.338+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T15:15:37.340+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Stopped oejs.Server@62ee7eae{STOPPING}[12.1.6,sto=0]
+2026-03-03T15:15:37.346+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@28d30a4d{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.11028857707810122707/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@19324e17{STOPPED}}
+2026-03-03T15:15:37.356+05:30  INFO 16964 --- [SpringBootSecurityJPA] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-03T15:15:37.380+05:30 ERROR 16964 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.test.service.UserService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-03-03T15:22:40.158+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 15352 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T15:22:40.163+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T15:22:40.225+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-03T15:22:40.226+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-03T15:22:41.721+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T15:22:41.802+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2026-03-03T15:22:42.695+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T15:22:42.701+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T15:22:42.738+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2511 ms
+2026-03-03T15:22:42.902+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T15:22:42.912+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@684cb459{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6964748867019992086/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@1aaf3c4d{STARTED}}
+2026-03-03T15:22:42.913+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@684cb459{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6964748867019992086/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@1aaf3c4d{STARTED}}
+2026-03-03T15:22:42.914+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@2a75147f{STARTING}[12.1.6,sto=0] @213ms
+2026-03-03T15:22:43.043+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T15:22:43.098+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T15:22:43.578+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T15:22:43.612+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T15:22:43.786+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3537f270
+2026-03-03T15:22:43.788+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T15:22:43.845+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T15:22:43.866+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T15:22:44.789+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T15:22:44.798+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T15:22:44.888+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T15:22:45.628+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T15:22:45.928+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-03-03T15:22:46.317+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 52a9a81f-f0b9-477a-b3d8-73442761972e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-03T15:22:46.350+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-03T15:22:46.530+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-03-03T15:22:46.703+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T15:22:46.703+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T15:22:46.705+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-03T15:22:46.739+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.AbstractConnector       : Started oejs.ServerConnector@1fdcc013{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T15:22:46.742+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.jetty.JettyWebServer            : Jetty started on port 7799 (http/1.1) with context path '/'
+2026-03-03T15:22:46.753+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Started SpringBootSecurityJpaApplication in 7.063 seconds (process running for 8.463)
+2026-03-03T15:22:46.765+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-03T15:22:46.765+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-03T17:32:31.863+05:30  INFO 15352 --- [SpringBootSecurityJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-03-03T17:32:31.873+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] o.s.boot.jetty.GracefulShutdown          : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T17:32:31.875+05:30  INFO 15352 --- [SpringBootSecurityJPA] [jetty-shutdown] o.s.boot.jetty.GracefulShutdown          : Graceful shutdown complete
+2026-03-03T17:32:31.881+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] o.e.jetty.server.AbstractConnector       : Stopped oejs.ServerConnector@1fdcc013{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:32:31.890+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:32:31.896+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T17:32:31.900+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T17:32:31.902+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] org.eclipse.jetty.server.Server          : Stopped oejs.Server@2a75147f{STOPPING}[12.1.6,sto=0]
+2026-03-03T17:32:31.909+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-03-03T17:32:31.913+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-1] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@684cb459{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6964748867019992086/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@1aaf3c4d{STOPPED}}
+2026-03-03T17:32:32.078+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 15352 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T17:32:32.079+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:32:32.680+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:32:32.715+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 4 JPA repository interfaces.
+2026-03-03T17:32:33.033+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T17:32:33.034+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T17:32:33.039+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 955 ms
+2026-03-03T17:32:33.100+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T17:32:33.102+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@49929982{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6684779981878643794/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@16035bb2{STARTED}}
+2026-03-03T17:32:33.102+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@49929982{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6684779981878643794/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@16035bb2{STARTED}}
+2026-03-03T17:32:33.103+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@71a0a24a{STARTING}[12.1.6,sto=0] @68ms
+2026-03-03T17:32:33.155+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:32:33.227+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:32:33.231+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-03T17:32:33.242+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b66f4ec
+2026-03-03T17:32:33.242+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-03T17:32:33.246+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T17:32:33.247+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:32:33.369+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:32:33.371+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:32:33.558+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:32:33.676+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-03-03T17:32:33.828+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1c312524-d521-4bf0-9139-142e1484876e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-03T17:32:33.846+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-03T17:32:33.908+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-03-03T17:32:33.969+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T17:32:33.969+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:32:33.974+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-03T17:32:33.985+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.AbstractConnector       : Started oejs.ServerConnector@171190ac{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:32:33.986+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.jetty.JettyWebServer            : Jetty started on port 7799 (http/1.1) with context path '/'
+2026-03-03T17:32:33.992+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Started SpringBootSecurityJpaApplication in 1.977 seconds (process running for 7795.62)
+2026-03-03T17:32:33.994+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-03T17:32:33.994+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-03T17:32:33.996+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-03T17:33:26.595+05:30  INFO 15352 --- [SpringBootSecurityJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-03T17:33:26.598+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] o.s.boot.jetty.GracefulShutdown          : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T17:33:26.599+05:30  INFO 15352 --- [SpringBootSecurityJPA] [jetty-shutdown] o.s.boot.jetty.GracefulShutdown          : Graceful shutdown complete
+2026-03-03T17:33:26.601+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] o.e.jetty.server.AbstractConnector       : Stopped oejs.ServerConnector@171190ac{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:33:26.605+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:33:26.606+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-03T17:33:26.608+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-03T17:33:26.611+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] org.eclipse.jetty.server.Server          : Stopped oejs.Server@71a0a24a{STOPPING}[12.1.6,sto=0]
+2026-03-03T17:33:26.614+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-03-03T17:33:26.615+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-14] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@49929982{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6684779981878643794/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@16035bb2{STOPPED}}
+2026-03-03T17:33:26.743+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 15352 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T17:33:26.744+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:33:27.281+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:33:27.322+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 4 JPA repository interfaces.
+2026-03-03T17:33:27.624+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T17:33:27.625+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T17:33:27.630+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 881 ms
+2026-03-03T17:33:27.717+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T17:33:27.723+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@35e75da{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6777587367065771692/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@45379bb3{STARTED}}
+2026-03-03T17:33:27.724+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@35e75da{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6777587367065771692/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@45379bb3{STARTED}}
+2026-03-03T17:33:27.724+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@152778a3{STARTING}[12.1.6,sto=0] @98ms
+2026-03-03T17:33:27.762+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:33:27.811+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:33:27.813+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-03T17:33:27.822+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1208894b
+2026-03-03T17:33:27.822+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-03T17:33:27.824+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T17:33:27.826+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:33:27.918+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:33:27.921+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:33:28.044+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:33:28.201+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-03-03T17:33:28.319+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-03-03T17:33:28.345+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T17:33:28.346+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:33:28.348+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-03T17:33:28.359+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.AbstractConnector       : Started oejs.ServerConnector@2667a1f4{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:33:28.360+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.jetty.JettyWebServer            : Jetty started on port 7799 (http/1.1) with context path '/'
+2026-03-03T17:33:28.365+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Started SpringBootSecurityJpaApplication in 1.667 seconds (process running for 7849.993)
+2026-03-03T17:33:28.367+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-03T17:33:28.367+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-03T17:33:28.371+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.springframework.security.web.util.matcher.RequestMatcher', 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebSecurityAutoConfiguration.EnableWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'spring.security.user.password'; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'spring.security.user.name'; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-03-03T17:35:38.687+05:30  INFO 15352 --- [SpringBootSecurityJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2026-03-03T17:35:38.689+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] o.s.boot.jetty.GracefulShutdown          : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T17:35:38.690+05:30  INFO 15352 --- [SpringBootSecurityJPA] [jetty-shutdown] o.s.boot.jetty.GracefulShutdown          : Graceful shutdown complete
+2026-03-03T17:35:38.691+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] o.e.jetty.server.AbstractConnector       : Stopped oejs.ServerConnector@2667a1f4{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:35:38.695+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:35:38.696+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-03T17:35:38.701+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-03-03T17:35:38.702+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] org.eclipse.jetty.server.Server          : Stopped oejs.Server@152778a3{STOPPING}[12.1.6,sto=0]
+2026-03-03T17:35:38.705+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-03-03T17:35:38.706+05:30  INFO 15352 --- [SpringBootSecurityJPA] [Thread-27] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@35e75da{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.6777587367065771692/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@45379bb3{STOPPED}}
+2026-03-03T17:35:38.822+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 15352 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T17:35:38.822+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:35:39.210+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:35:39.249+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2026-03-03T17:35:39.476+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T17:35:39.477+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T17:35:39.483+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 659 ms
+2026-03-03T17:35:39.529+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T17:35:39.531+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@43c52a38{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.501576023035669762/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@5ec844fb{STARTED}}
+2026-03-03T17:35:39.531+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@43c52a38{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.501576023035669762/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@5ec844fb{STARTED}}
+2026-03-03T17:35:39.532+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@42794a57{STARTING}[12.1.6,sto=0] @54ms
+2026-03-03T17:35:39.571+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:35:39.625+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:35:39.627+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-03T17:35:39.636+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52fe8245
+2026-03-03T17:35:39.637+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-03T17:35:39.639+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T17:35:39.641+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:35:39.743+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:35:39.753+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:35:39.822+05:30  WARN 15352 --- [SpringBootSecurityJPA] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes\com\test\controller\UserDetailsServiceImpl.class]: Failed to instantiate [com.test.controller.UserDetailsServiceImpl]: Constructor threw exception
+2026-03-03T17:35:39.823+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:35:39.823+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-03T17:35:39.855+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-03-03T17:35:39.856+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Stopped oejs.Server@42794a57{STOPPING}[12.1.6,sto=0]
+2026-03-03T17:35:39.859+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@43c52a38{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.501576023035669762/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@5ec844fb{STOPPED}}
+2026-03-03T17:35:39.866+05:30  INFO 15352 --- [SpringBootSecurityJPA] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-03T17:35:39.890+05:30 ERROR 15352 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes\com\test\controller\UserDetailsServiceImpl.class]: Failed to instantiate [com.test.controller.UserDetailsServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.test.SpringBootSecurityJpaApplication.main(SpringBootSecurityJpaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.test.controller.UserDetailsServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:220) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The declared package "com.test.service" does not match the expected package "com.test.controller"
+	The public type UserDetailsServiceImpl must be defined in its own file
+
+	at com.test.controller.UserDetailsServiceImpl.<init>(UserController.java:1) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:207) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 26 common frames omitted
+
+2026-03-03T17:52:43.063+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Starting SpringBootSecurityJpaApplication using Java 25.0.1 with PID 13064 (C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA\target\classes started by raghusai.achuth in C:\Users\raghusai.achuth\Desktop\MLA_java59\SpringBootSecurityJPA)
+2026-03-03T17:52:43.067+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:52:43.130+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-03T17:52:43.131+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-03T17:52:44.598+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:52:44.674+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2026-03-03T17:52:45.522+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.j.s.JettyServletWebServerFactory   : Server initialized with port: 7799
+2026-03-03T17:52:45.529+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 25.0.1+8-LTS
+2026-03-03T17:52:45.570+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2438 ms
+2026-03-03T17:52:45.737+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-03-03T17:52:45.748+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started osbjs.JettyEmbeddedWebAppContext@795bdea{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.3623198550627530651/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@37eab7f{STARTED}}
+2026-03-03T17:52:45.749+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.e.servlet.ServletContextHandler    : Started osbjs.JettyEmbeddedWebAppContext@795bdea{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.3623198550627530651/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@37eab7f{STARTED}}
+2026-03-03T17:52:45.750+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.eclipse.jetty.server.Server          : Started oejs.Server@6c8c60b9{STARTING}[12.1.6,sto=0] @223ms
+2026-03-03T17:52:45.930+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:52:46.075+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:52:46.862+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:52:46.921+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T17:52:47.146+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5eee5f98
+2026-03-03T17:52:47.148+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T17:52:47.334+05:30  WARN 13064 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03T17:52:47.372+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: sales/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:52:48.827+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:52:48.837+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:52:48.943+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-03T17:52:49.911+05:30  WARN 13064 --- [SpringBootSecurityJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:52:49.995+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-03-03T17:52:50.152+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-03-03T17:52:50.207+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-03-03T17:52:50.810+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-03-03T17:52:50.895+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03T17:52:50.895+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:52:50.898+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-03T17:52:50.934+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.e.jetty.server.AbstractConnector       : Started oejs.ServerConnector@138ceb7c{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:52:50.938+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.boot.jetty.JettyWebServer            : Jetty started on port 7799 (http/1.1) with context path '/'
+2026-03-03T17:52:50.948+05:30  INFO 13064 --- [SpringBootSecurityJPA] [restartedMain] c.test.SpringBootSecurityJpaApplication  : Started SpringBootSecurityJpaApplication in 8.394 seconds (process running for 9.822)
+2026-03-03T17:52:50.961+05:30  WARN 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-03T17:52:50.961+05:30  WARN 13064 --- [SpringBootSecurityJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-03T17:53:19.469+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-48] o.s.security.web.FilterChainProxy        : Securing GET /
+2026-03-03T17:53:19.490+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-48] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:19.525+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-48] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:7799/?continue to session
+2026-03-03T17:53:19.526+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-48] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login
+2026-03-03T17:53:19.585+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-43] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-03-03T17:53:19.588+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-43] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-03-03T17:53:20.128+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-43] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:22.469+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-45] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-03-03T17:53:22.470+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-45] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:22.471+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-45] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login
+2026-03-03T17:53:22.487+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-03-03T17:53:22.489+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-03-03T17:53:22.506+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:29.901+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Securing GET /users/list
+2026-03-03T17:53:29.902+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Secured GET /users/list
+2026-03-03T17:53:30.016+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] org.hibernate.SQL                        : select r1_0.role_id,r1_0.name from roles r1_0
+2026-03-03T17:53:30.209+05:30  WARN 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1146, SQLState: 42S02
+2026-03-03T17:53:30.209+05:30  WARN 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] org.hibernate.orm.jdbc.error             : Table 'sales.roles' doesn't exist
+2026-03-03T17:53:30.227+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:30.229+05:30  WARN 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.e.jetty.ee11.servlet.ServletChannel    : /users/list
+
+jakarta.servlet.ServletException: Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [Table 'sales.roles' doesn't exist] [select r1_0.role_id,r1_0.name from roles r1_0]; SQL [select r1_0.role_id,r1_0.name from roles r1_0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1008) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.eclipse.jetty.ee11.servlet.ServletHolder.handle(ServletHolder.java:750) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1668) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.websocket.servlet.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:199) ~[jetty-ee11-websocket-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:245) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:239) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.eclipse.jetty.ee11.servlet.FilterHolder.doFilter(FilterHolder.java:205) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1640) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler$MappedServlet.handle(ServletHandler.java:1602) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletChannel.dispatch(ServletChannel.java:868) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletChannel.handle(ServletChannel.java:449) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.ServletHandler.handle(ServletHandler.java:470) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:546) ~[jetty-security-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.ee11.servlet.SessionHandler.handle(SessionHandler.java:763) ~[jetty-ee11-servlet-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1224) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.Handler$Wrapper.handle(Handler.java:794) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.handler.EventsHandler.handle(EventsHandler.java:81) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.Server.handle(Server.java:197) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:787) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:410) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1805) ~[jetty-server-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54) ~[jetty-io-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:492) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.epcRunTask(AdaptiveExecutionStrategy.java:428) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:401) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:255) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:204) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:317) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1239) ~[jetty-util-12.1.6.jar:12.1.6]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194) ~[jetty-util-12.1.6.jar:12.1.6]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [Table 'sales.roles' doesn't exist] [select r1_0.role_id,r1_0.name from roles r1_0]; SQL [select r1_0.role_id,r1_0.name from roles r1_0]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:156) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:131) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.translateExceptionIfPossible(HibernateExceptionTranslator.java:105) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:223) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:576) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:346) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:157) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy169.findAll(Unknown Source) ~[na:na]
+	at com.test.service.UserService.findAllRoles(UserService.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.5.jar:7.0.5]
+	at com.test.service.UserService$$SpringCGLIB$$0.findAllRoles(<generated>) ~[classes/:na]
+	at com.test.controller.UserController.listUsers(UserController.java:93) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	... 123 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [Table 'sales.roles' doesn't exist] [select r1_0.role_id,r1_0.name from roles r1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:290) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:190) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:393) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:354) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:135) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:128) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:427) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:355) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:374) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:121) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:412) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.5.jar:7.0.5]
+	... 152 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sales.roles' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:271) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	... 187 common frames omitted
+
+2026-03-03T17:53:30.251+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-03-03T17:53:30.254+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Secured GET /error
+2026-03-03T17:53:30.279+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:30.871+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-03-03T17:53:30.875+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:30.876+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login
+2026-03-03T17:53:30.889+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-03-03T17:53:30.891+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-03-03T17:53:30.905+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:37.900+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-03-03T17:53:37.902+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-03-03T17:53:37.919+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:37.980+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-03-03T17:53:37.984+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:53:37.985+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-49] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login
+2026-03-03T17:53:38.001+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-03-03T17:53:38.002+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-03-03T17:53:38.044+05:30 DEBUG 13064 --- [SpringBootSecurityJPA] [qtp858077965-47] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-03T17:56:54.851+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-03T17:56:54.857+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] o.s.boot.jetty.GracefulShutdown          : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03T17:56:54.865+05:30  INFO 13064 --- [SpringBootSecurityJPA] [jetty-shutdown] o.s.boot.jetty.GracefulShutdown          : Graceful shutdown complete
+2026-03-03T17:56:54.869+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] o.e.jetty.server.AbstractConnector       : Stopped oejs.ServerConnector@138ceb7c{HTTP/1.1, (http/1.1)}{0.0.0.0:7799}
+2026-03-03T17:56:54.875+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:56:54.880+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T17:56:54.895+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-03T17:56:54.901+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] org.eclipse.jetty.server.Server          : Stopped oejs.Server@6c8c60b9{STOPPING}[12.1.6,sto=0]
+2026-03-03T17:56:54.933+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-03-03T17:56:54.936+05:30  INFO 13064 --- [SpringBootSecurityJPA] [RMI TCP Connection(9)-127.0.0.1] o.e.j.e.servlet.ServletContextHandler    : Stopped osbjs.JettyEmbeddedWebAppContext@795bdea{application,/,b=[file:/C:/Users/raghusai.achuth/AppData/Local/Temp/jetty-docbase.7799.3623198550627530651/, jar:file:///C:/Users/raghusai.achuth/.m2/repository/org/webjars/swagger-ui/5.31.0/swagger-ui-5.31.0.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@37eab7f{STOPPED}}
